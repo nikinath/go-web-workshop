@@ -159,7 +159,7 @@ Once you're happy with how your application looks you might want to share it
 with the world, to do so you will need to create a Google Cloud Platform
 project.
 
-1. Visit https://console.developers.google.com and log in with your credentials.
+1. Visit https://console.cloud.google.com and log in with your credentials.
 1. Click on `create a project` and choose a name and project ID
 
 That's it! You can now deploy your code to the Google App Engine servers!
