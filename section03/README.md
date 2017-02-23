@@ -11,7 +11,7 @@ Let's start!
 ## Reading parameters from the URL
 
 We've seen how we can route a request to different handlers depending on the path.
-Now we're going to see how to extract then ones in the query part of the request, aka the data after `?`.
+Now we're going to see how to extract the ones in the query part of the request, aka the data after `?`.
 
 The `http.Request` type has a method `FormValue` with the following docs:
 
@@ -48,7 +48,7 @@ Think about how would you make your program print all the values given to `name`
 
 ## Reading from the Request body
 
-Similarly to how we read from the `Body` in the `http.Response` a couple of chapter before we can read
+Similar to how we read from the `Body` in the `http.Response` a couple of chapters before, we can read
 the body of the `http.Request`.
 
 Note that even though the type of `Body` in `http.Request` is `io.ReadCloser` the body will be automatically
@@ -104,7 +104,7 @@ write the description of the error. That's why the `http.Error` function exists.
 
     Error replies to the request with the specified error message and HTTP code. The error message should be plain text.
 
-A call to `Error` can then replace a call to `WriteHeader` followed by a some call writing to the `ResponseWriter`.
+A call to `Error` can then replace a call to `WriteHeader` followed by some call writing to the `ResponseWriter`.
 
 #### Exercise status codes with http.Error
 
