@@ -114,7 +114,7 @@ As you can see we're creating a `datastore.Key` calling `datastore.NewKey`:
 func NewKey(c appengine.Context, kind, stringID string, intID int64, parent *Key) *Key
 ```
 
-When creating a complete key you need to choose between wheter you will use a
+When creating a complete key you need to choose between whether you will use a
 `string` value (as in the example) or an `int64`. One and only one of the fields
 `stringID` and `intID` should be empty (`""` or `0`).
 
